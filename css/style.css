@@ -1,19 +1,31 @@
+
+body{
+
+    background-color:#f5e6c6 ;
+    margin: 1.5%;
+}
 h1{
     text-align: center;
     font-size: 160%;
     font-weight: bolder;
+    background-color: #fb9300;
+
 }
 h2{
+    background-color: #f5e6ca;
     font-size: 120%;
     font-weight: bold;
 }
 ul{
+    background-color: #f54748;
+
     list-style-type: circle;
     list-style-position:inside;
     font-size: 80%;
 
 }
 footer{
+    background-color: #fb9300;
     text-align: center;
     font-weight: bold;
 }
