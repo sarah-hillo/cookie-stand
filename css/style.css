@@ -12,6 +12,22 @@ div{
     border:1px;
 
 }
+p{
+
+    background-color: #f54748;
+    font-size: 110%;
+
+}
+.b{
+    height:10% ;
+    width: 20%;
+}
+h3{
+    
+    background-color: #f54748;
+    font-size: 130%;
+
+}
 table{
 
     margin-right: 10%;
