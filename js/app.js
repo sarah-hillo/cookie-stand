@@ -478,12 +478,12 @@ let tokyo=new Shop('Tokyo',3,24,1.2);
 let dubai=new Shop('Dubai',11,38,3.7);
 let paris=new Shop('Paris',20,38,2.3);
 let lima=new Shop('Lima',2,16,4.6);
-
+//submitter(event);
 //console.log(tokyo);
-seattle.getcustomer();
-dubai.getcustomer();
-dubai.getcookies();
-console.log(dubai.cookiesArray);
+// seattle.getcustomer();
+// dubai.getcustomer();
+// dubai.getcookies();
+// console.log(dubai.cookiesArray);
 
 
 for (let i = 0; i<shops.length; i++) {
@@ -526,3 +526,27 @@ thElement1.textContent=Total;
 }
 makingFooter();
 
+let form=document.getElementById('form');
+//add event listener
+console.log(form);
+form.addEventListener('submit',submitter);
+
+function submitter(event){
+
+event.preventDefault();
+let name=event.target.nameField.value;
+let min=event.target.min.value;
+let max=event.target.max.value;
+let avg=event.target.avg.value;
+let addedShop=new Shop(name,min,max,avg);
+
+table.textContent="";
+makingHeader();
+for (let i = 0; i<shops.length; i++) {
+  shops[i].getcustomer();
+  shops[i].getcookies();
+  shops[i].render();
+}        
+makingFooter();
+
+}
