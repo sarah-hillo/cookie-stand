@@ -21,7 +21,19 @@ p{
 .b{
     height:10% ;
     width: 20%;
+}
+#aa{
+    float: left;
+    height: 50px;
+    margin-left:25px;
+    padding: 10px;
+    padding-top: 25px;
+    
 
+}
+#bb{
+    margin-left: 0%;
+    margin-right: 14%;
 }
 h3{
     
