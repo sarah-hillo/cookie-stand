@@ -63,3 +63,17 @@ footer{
     text-align: center;
     font-weight: bold;
 }
+
+
+
+input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:invalid:required {
+    background-image: linear-gradient(to right, pink, rgb(255, 174, 0));
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
