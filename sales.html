@@ -25,24 +25,24 @@
             <br>
         <label for="nameField">Enter the shop's name</label>
 
-        <input type="text" id="nameField" placeholder="name"  name="nameField" autocomplete="off">
+        <input type="text" id="nameField" placeholder="name"  name="nameField" autocomplete="off" required>
 
         <br>
 
 
         <label for="min">Enter the minimum number of customers</label>
 
-        <input type="number" id="min" name="min"> 
+        <input type="number" id="min" name="min" min="0" max="1000" required maxlength="30">   
         <br>
         
         <label for="max">Enter the maximum number of customers</label>
 
-        <input type="number" id="max" name="max"> 
+        <input type="number" id="max" name="max" min="0" max="1000" required> 
         <br>
         
         <label for="avg">Enter the average number of cookies </label>
 
-        <input type="number" id="avg" name="avg" step="0.1"> 
+        <input type="number" id="avg" name="avg" step="0.1" min="0" max="1000" required> 
         <br>
 
 
